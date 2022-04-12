@@ -13,7 +13,7 @@ RUN apt-get upgrade -y && \
   apt-get install -y ca-certificates
 
 COPY requirements.txt /requirements.txt
-RUN pip3 install -r /requirements.txt
+RUN py3-pip install -r /requirements.txt
 
 RUN mkdir -p /opt/tools
 

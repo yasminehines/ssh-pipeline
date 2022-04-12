@@ -10,7 +10,7 @@ LABEL "com.github.actions.icon"="terminal"
 LABEL "com.github.actions.color"="gray-dark"
 
 RUN apt-get upgrade -y && \
-  apt-get install -y ca-certificates openssh-client openssl sshpass
+  apt-get install -y ca-certificates
 
 COPY requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt

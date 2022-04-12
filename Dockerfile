@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Pipeline: ssh"
 LABEL "com.github.actions.icon"="terminal"
 LABEL "com.github.actions.color"="gray-dark"
 
-RUN apt-get update -y && \
+RUN apt-get upgrade -y && \
   apt-get install -y ca-certificates openssh-client openssl sshpass
 
 COPY requirements.txt /requirements.txt

@@ -24,6 +24,9 @@ inputs:
   script:
     description: 'execute commands on ssh'
     required: false
+  script_stop:
+    description: 'stop script after first failure'
+    default: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
